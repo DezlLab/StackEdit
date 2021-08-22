@@ -1,7 +1,7 @@
 :root
 {
 	cursor: default;
-	--Splt0: 30%;/*Stack Text Seperator*/
+	--Splt0: 20%;/*Stack Text Seperator*/
 	--Splt1: 90%;/*Stack Consol Seperator*/
 	--Splt2: 70%;/*View Text Seperator*/
 	--splitter: 10px;
@@ -138,7 +138,7 @@ a
 .S_Add_Node{
 	padding: 10px;
 	width: 100%;
-	background-color: #50ff50;
+	background-color: #50fff0;
 	border-radius: 10px;
 }
 .S_Node{
