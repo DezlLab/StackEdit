@@ -1,0 +1,93 @@
+:root
+{
+	--Splt0: 50%;/*Stack Text Seperator*/
+	--Splt1: 50%;/*Stack Consol Seperator*/
+	--Splt2: 50%;/*View Text Seperator*/
+	--splitter: 10px;
+}
+
+body
+{
+	margin: 0;
+}
+
+.wrapper {
+	display: grid;
+	height: 100%;
+	grid-template-columns: var(--Splt2) var(--splitter) auto;
+	grid-auto-rows: auto 1fr var(--splitter) var(--Splt1);
+}
+.wrapper div
+{
+	overflow: hidden;
+}
+#splitter{
+	user-select: none;
+	background-color: aqua;
+	width: var(--splitter);
+	height: 100%;
+}
+#splitter:hover{
+	filter: brightness(150%);
+	filter: hue-rotate(-50deg);
+}
+.splitter{
+}
+.splitter:hover{
+	filter: brightness(150%);
+	filter: hue-rotate(-50deg);
+}
+.splt_Y0{
+	user-select: none;
+	background-color: aqua;
+	width: var(--splitter);
+	height: 100%;
+}
+.splt_Y1{
+	user-select: none;
+	background-color: aqua;
+	width: var(--splitter);
+	height: 100%;
+	grid-column: 2;
+	grid-row: 2 / 5;
+}
+.splt_X0{
+	user-select: none;
+	background-color: aqua;
+	height: var(--splitter);
+	width: 100%;
+	grid-row: 3;
+}
+.options {
+	background-color: gray;
+	grid-column: 1 / 4;
+	grid-row: 1;
+}
+.Edit{
+	grid-column: 1;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: var(--Splt0) var(--splitter) auto;
+	grid-auto-rows: auto;
+}
+.stack {
+	background-color: blue;
+	grid-column: 1;
+}
+.text{
+	
+	font-size: 50px;
+	resize: none;
+	white-space: pre;
+	grid-column: 3;
+}
+.consol {
+	background-color: black;
+	grid-column: 1 / 2;
+	grid-row: 4;
+}
+.view {
+	background-color: lightblue;
+	grid-column: 3;
+	grid-row: 2 / 5;
+}
