@@ -2,13 +2,13 @@
 {
 	cursor: default;
 	--Splt0: 20%;/*Stack Text Seperator*/
-	--Splt1: 90%;/*Stack Consol Seperator*/
+	--Splt1: 93.6%;/*Stack Consol Seperator*/
 	--Splt2: 70%;/*View Text Seperator*/
 	--splitter: 10px;
 }
 
 body{
-	overflow-y: hidden;
+	overflow: hidden;
 	margin: 0;
 	color: white;
 	font-family: sans-serif;
@@ -87,8 +87,8 @@ a
 	font-size: 16;
 	background-color: #0f0f20f0;
 	z-index: 20;
-	grid-column: 1 / 4;
-	grid-row: 1 / 4;
+	grid-column: 1;
+	grid-row: 2;
 }
 .M_Preferences
 {
@@ -160,7 +160,7 @@ a
 }
 .Node_Select{
 	border-radius: 5px 0 0 0;
-	padding: 3px;
+	padding: 4.5px;
 	border: 0;
 }
 .Node_Container{
@@ -171,12 +171,13 @@ a
 .stack {
 	padding: 10px;
 	overflow: hidden;
+	overflow-y:auto;
 	background-color: #555555;
 	grid-column: 1;
 }
 /*Console*/
 .S_Console{
-	overflow: hidden;
+	overflow-y: hidden;
 	grid-column: 1 / 2;
 	grid-row: 3 / 4;
 	display: grid;
@@ -204,6 +205,7 @@ a
 
 /*New*/
 .wrapper{
+	grid-column: 1;
 	grid-row: 2;
 	display: grid;
 	grid-template-columns: var(--Splt2) var(--splitter) auto;
@@ -243,6 +245,7 @@ a
 	grid-row: 2;
 }
 .Edit{
+	overflow: hidden;
 	grid-column: 1;
 	grid-row: 1;
 	display: grid;

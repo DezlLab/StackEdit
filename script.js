@@ -350,8 +350,10 @@ for(var i = 0; i < seperators.length; i++){
 				curPos = e.clientY
 			}
 			var val = max - (max - curPos + posOff)
-			if(val<10 || curPos<0){val = 0}
-			if(val>max-20){val = max - 10}
+			var fontSize = getStorage("--ID1")
+			var handel = 10 //TODO redo storage
+			if(val < fontSize || curPos < 0){val = 0}
+			if(val > max- fontSize - handel){val = max - handel}
 			val = val * 100 / max
 				document.documentElement.style.setProperty("--Splt"+id, val+"%");
 			//console.log("mouse move: " + e.clientX);
