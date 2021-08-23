@@ -5,18 +5,17 @@
 	--Splt1: 90%;/*Stack Consol Seperator*/
 	--Splt2: 70%;/*View Text Seperator*/
 	--splitter: 10px;
-	
 }
 
-body
-{
+body{
+	overflow-y: hidden;
 	margin: 0;
 	color: white;
 	font-family: sans-serif;
 	font-size: var(--ID1);
-	height: 100%;
 	display: grid;
-	grid-auto-rows: auto 1fr;
+	height: 100%;
+	grid-template-rows: auto 1fr;
 }
 a
 {
@@ -111,10 +110,8 @@ a
 }
 /*Buttons*/
 .S_Buttons{
-	position: sticky;
-	top: 0;
 	width: 100%;
-	background-color: rgba(50,50,50,0.5);
+	background-color: rgba(50,50,50);
 }
 .button0{
 	display: inline-block;
@@ -140,21 +137,36 @@ a
 	width: 100%;
 	background-color: #50ff50;
 	border-radius: 10px;
+	min-width: 100px;
+	font-size: 15px;
 }
 .S_Node{
 	border-radius: 10px 0 10px 10px;
 	margin: 5px;
 	background-color: lightblue;
+	cursor: move;
 	overflow: hidden;
+	min-width: 100px;
 }
 .Node_Delete{
+	color: #fff;
 	float: right;
-	border-radius: 0;
+	border: 0;
+	background-color: #0000;
+	font-size: 20px;
+}
+.Node_Delete:hover{
+	background-color: #f00f;
 }
 .Node_Select{
-	border-radius: 0 0 10px 10px;
-	height: 75px;
+	border-radius: 5px 0 0 0;
+	padding: 3px;
+	border: 0;
+}
+.Node_Container{
+	display:inline-block;
 	width: 100%;
+	background-color:gainsboro;
 }
 .stack {
 	padding: 10px;

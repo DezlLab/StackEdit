@@ -375,7 +375,8 @@ function newNode(){
 							"<option value='0'>findeDo</option>"+
 							"<option value='1'>Type</option>"+
 							"<option value='2'>Abc</option>"+
-						"</select>";
+						"</select>"+
+						"<button class='Node_Container'>Test</button>";
 	return node;
 }
 
