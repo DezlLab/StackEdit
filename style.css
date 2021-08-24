@@ -184,22 +184,21 @@ a
 	grid-auto-rows: 1fr auto;
 }
 .S_C_Edit{
-	width: 100%;
 	font-size: var(--ID1);
 	background-color: var(--ID8);
 	color: var(--ID9);
 	grid-row: 2;
+	border: 0;
 }
 .S_C_Text{
 	background-color: var(--ID4);
 	height: 100%;/*var(--ID7);*/
-	overflow-y: scroll;
+	overflow-y: hidden;
 	color: #fff;
 	grid-row: 1;
 }
 .S_C_Toggle{
 	background-color: #50ff50;
-	border: none;
 }
 
 

@@ -350,12 +350,11 @@ for(var i = 0; i < seperators.length; i++){
 				curPos = e.clientY
 			}
 			var val = max - (max - curPos + posOff)
-			var fontSize = getStorage("--ID1")
+			var fontSize = getStorage(1)
 			var handel = 10 //TODO redo storage
 			if(val < fontSize || curPos < 0){val = 0}
-			if(val > max- fontSize - handel){val = max - handel}
-			val = val * 100 / max
-				document.documentElement.style.setProperty("--Splt"+id, val+"%");
+			if(val > max - fontSize - handel){val = max - handel}
+				document.documentElement.style.setProperty("--Splt"+id, val+"px");
 			//console.log("mouse move: " + e.clientX);
 		}
 	}
